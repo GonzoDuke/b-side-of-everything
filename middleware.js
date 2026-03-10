@@ -85,12 +85,12 @@ export default function middleware(request) {
   <meta property="og:url" content="${pageUrl}" />
   <meta property="og:title" content="${fullTitle}" />
   <meta property="og:description" content="${piece.desc}" />
-  <meta property="og:image" content="${DOMAIN}/og-image.png" />
+  <meta property="og:image" content="${DOMAIN}/og/${path}.png" />
   <meta property="og:site_name" content="The B-Side of Everything" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${fullTitle}" />
   <meta name="twitter:description" content="${piece.desc}" />
-  <meta name="twitter:image" content="${DOMAIN}/og-image.png" />
+  <meta name="twitter:image" content="${DOMAIN}/og/${path}.png" />
   <meta http-equiv="refresh" content="0;url=${pageUrl}" />
 </head>
 <body></body>
@@ -103,5 +103,5 @@ export default function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|assets|favicon|og-image|bg\\.jpg|.*\\..*).*)'],
+  matcher: ['/((?!api|_next|assets|favicon|og-image|og/|bg\\.jpg|.*\\..*).*)'],
 }
