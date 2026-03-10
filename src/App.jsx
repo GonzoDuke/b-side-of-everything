@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import HomePage from './components/HomePage'
 import PieceView from './components/PieceView'
 import { PIECES } from './data/pieces'
@@ -80,6 +81,7 @@ export default function App() {
       ) : (
         <PieceView pieceId={view} navigate={navigate} />
       )}
+      <Analytics />
     </div>
   )
 }
