@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import AMA from '../components/pieces/AMA.jsx';
+
+const piece = PIECES.find(p => p.id === 'ama');
+---
+
+<PieceLayout piece={piece}>
+  <AMA client:load />
+</PieceLayout>

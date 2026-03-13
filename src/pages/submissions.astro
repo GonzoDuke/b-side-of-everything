@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const S = {
+  bg: "#1a1714",
+  text: "#f0ece4",
+  textDim: "rgba(240,236,228,0.65)",
+  textGhost: "rgba(240,236,228,0.4)",
+  rule: "rgba(240,236,228,0.12)",
+  buttonBorder: "rgba(240,236,228,0.2)",
+  buttonText: "rgba(240,236,228,0.55)",
+};
+---
+
+<BaseLayout
+  title="Submissions — The B-Side of Everything"
+  description="Guidelines for submitting to the archive."
+  ogImage="/og-image.png"
+  ogUrl="https://thebsideofeverything.com/submissions"
+>
+  <div style={`background: ${S.bg}; min-height: 100vh;`}>
+    <!-- Nav -->
+    <nav style={`
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(26,23,20,0.92);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid ${S.rule};
+      padding: 0 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 52px;
+    `}>
+      <a href="/" style={`
+        background: none; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
+        font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 0.06em;
+        color: ${S.buttonText}; padding: 6px 14px; text-decoration: none;
+      `}>&larr; Back to Collection</a>
+      <span style={`
+        font-family: var(--serif); font-size: 14px; font-weight: 400;
+        font-style: italic; color: ${S.textGhost};
+      `}>The B-Side of Everything</span>
+    </nav>
+
+    <!-- Content -->
+    <div style="max-width: 640px; margin: 0 auto; padding: 100px 32px 120px;">
+      <h1 style={`
+        font-family: var(--serif); font-size: 32px; font-weight: 400;
+        color: ${S.text}; margin: 0 0 32px; letter-spacing: -0.01em;
+      `}>Submissions</h1>
+
+      <div style={`
+        font-family: var(--body); font-size: 16px; line-height: 1.85;
+        color: ${S.textDim};
+      `}>
+        <p style="margin: 0 0 20px;">
+          I'm looking for writing about music that most people have never heard of. The kind of thing that exists in one copy, or in someone's memory, or on a website that went offline in 2011. Reviews, liner notes, interviews, transcripts, letters, zine pages, forum posts, academic work, show listings, radio segments, anything that documents a band or a scene or a moment that didn't get preserved by anyone with a platform.
+        </p>
+        <p style="margin: 0 0 20px;">
+          The writing doesn't have to be polished. It doesn't have to be long. It has to be real, or close enough that the difference stops mattering. If someone sat down and tried to describe what they heard, and the attempt survived in some form, I want to see it.
+        </p>
+
+        <div style={`height: 1px; background: ${S.rule}; margin: 32px 0;`}></div>
+
+        <p style={`margin: 0 0 20px; color: ${S.text};`}>
+          <strong style="font-weight: 500;">What to send:</strong>
+        </p>
+        <p style="margin: 0 0 12px;">
+          The text itself, or a scan, or a photograph, or a link if it still exists online. A sentence or two about where you found it and why you kept it. That's enough. I'll figure out the rest.
+        </p>
+        <p style="margin: 0 0 20px;">
+          If you wrote it yourself, that's fine too. Tell me that up front.
+        </p>
+
+        <p style={`margin: 0 0 20px; color: ${S.text};`}>
+          <strong style="font-weight: 500;">What I'm not looking for:</strong>
+        </p>
+        <p style="margin: 0 0 20px;">
+          Press releases. Promotional material. Writing about bands that already have Wikipedia pages. Anything that was written to sell something. The archive is for the stuff that fell through the cracks, not the stuff that was pushed through them.
+        </p>
+
+        <div style={`height: 1px; background: ${S.rule}; margin: 32px 0;`}></div>
+
+        <p style="margin: 0 0 0;">
+          Send everything to
+          <a href="mailto:archive@thebsideofeverything.com" style={`color: ${S.text}; text-decoration: none; border-bottom: 1px solid ${S.rule};`}>archive@thebsideofeverything.com</a>.
+          I read everything. I don't respond to everything. If it ends up in the collection, I'll let you know.
+        </p>
+
+        <div style={`
+          font-family: var(--mono); font-size: 11px; color: ${S.textGhost};
+          margin-top: 48px; letter-spacing: 0.06em;
+        `}>
+          TL Skinsbury
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

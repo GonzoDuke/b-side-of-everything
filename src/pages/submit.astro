@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const S = {
+  bg: "#1a1714",
+  text: "#f0ece4",
+  textDim: "rgba(240,236,228,0.65)",
+  textGhost: "rgba(240,236,228,0.4)",
+  rule: "rgba(240,236,228,0.12)",
+  buttonBorder: "rgba(240,236,228,0.2)",
+  buttonText: "rgba(240,236,228,0.55)",
+};
+---
+
+<BaseLayout
+  title="Submit — The B-Side of Everything"
+  description="Submission guidelines for The B-Side of Everything. The archive is open."
+  ogImage="/og-image.png"
+  ogUrl="https://thebsideofeverything.com/submit"
+>
+  <div style={`background: ${S.bg}; min-height: 100vh;`}>
+    <!-- Nav -->
+    <nav style={`
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(26,23,20,0.92);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid ${S.rule};
+      padding: 0 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 52px;
+    `}>
+      <a href="/" style={`
+        background: none; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
+        font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 0.06em;
+        color: ${S.buttonText}; padding: 6px 14px; text-decoration: none;
+      `}>&larr; Back to Collection</a>
+      <span style={`
+        font-family: var(--serif); font-size: 14px; font-weight: 400;
+        font-style: italic; color: ${S.textGhost};
+      `}>The B-Side of Everything</span>
+    </nav>
+
+    <!-- Content -->
+    <div style="max-width: 640px; margin: 0 auto; padding: 100px 32px 120px;">
+      <h1 style={`
+        font-family: var(--serif); font-size: 32px; font-weight: 400;
+        color: ${S.text}; margin: 0 0 32px; letter-spacing: -0.01em;
+      `}>Submission Guidelines</h1>
+
+      <div style={`
+        font-family: var(--body); font-size: 16px; line-height: 1.85;
+        color: ${S.textDim};
+      `}>
+        <p style="margin: 0 0 20px;">
+          The archive accepts writing about bands that don't exist, presented in forms that do. That's the whole premise. You invent the band. You write about them the way someone actually would have, in a form that belongs to a real tradition of music writing. The reader should not be able to tell, at least not immediately, that they're reading fiction.
+        </p>
+
+        <div style={`height: 1px; background: ${S.rule}; margin: 36px 0;`}></div>
+
+        <h2 style={`
+          font-family: var(--serif); font-size: 22px; font-weight: 400;
+          color: ${S.text}; margin: 0 0 16px;
+        `}>What belongs here</h2>
+
+        <p style="margin: 0 0 20px;">
+          A piece for this collection occupies a specific form of music writing: a review, a profile, liner notes, a radio transcript, a forum thread, an obituary, a grant application, a cease and desist letter. The form is not a container for the story. The form is the story. The way a zine review sounds is different from the way a dissertation chapter sounds, and both of those are different from the way a booking agent's email sounds. If you strip the form away and the piece still works, you picked the wrong form.
+        </p>
+        <p style="margin: 0 0 20px;">
+          The band must be invented. The world around them should be real. Use real cities, real venues, real labels, real adjacent artists. The para-fictional effect depends on the fictional thing being surrounded by things the reader can verify. If you set a band in Bristol, The Fleece should feel like The Fleece. If you reference a label, someone who knows that label should nod.
+        </p>
+        <p style="margin: 0 0 20px;">
+          The writing should be good. Not clever. Not showy. Good in the way that the best music writing is good: precise, attentive, willing to sit with a detail longer than is comfortable. The voice belongs to the form and the character, not to you.
+        </p>
+
+        <div style={`height: 1px; background: ${S.rule}; margin: 36px 0;`}></div>
+
+        <h2 style={`
+          font-family: var(--serif); font-size: 22px; font-weight: 400;
+          color: ${S.text}; margin: 0 0 16px;
+        `}>What doesn't belong here</h2>
+
+        <p style="margin: 0 0 20px;">
+          Fan fiction about real bands. Satire. Parody. Anything where the joke is the point. Anything where the reader is supposed to laugh at the form rather than believe it. Pieces that explain the band name. Pieces that announce what a character is feeling instead of letting the reader figure it out. Prose that sounds like a press kit.
+        </p>
+        <p style="margin: 0 0 20px;">
+          The collection has used the following forms already, so unless you're doing something genuinely different with one of them, pick a new one: webzine review, Substack essay, YouTube comment section, digital magazine feature, vinyl reissue liner notes, translated blog post, dissertation chapter, radio transcript, show preview, Reddit AMA, student journal feature, punk zine review, industry newsletter column, VHS tape transcript, record guide entry.
+        </p>
+
+        <div style={`height: 1px; background: ${S.rule}; margin: 36px 0;`}></div>
+
+        <h2 style={`
+          font-family: var(--serif); font-size: 22px; font-weight: 400;
+          color: ${S.text}; margin: 0 0 16px;
+        `}>How to submit</h2>
+
+        <p style="margin: 0 0 20px;">
+          Send the piece to <a href="mailto:archive@thebsideofeverything.com" style={`color: ${S.text}; text-decoration: none; border-bottom: 1px solid ${S.rule};`}>archive@thebsideofeverything.com</a>. Word doc, PDF, plain text, whatever you have. Include a short note telling me what the form is and anything I'd need to know about the world you built. Don't over-explain. If the piece needs a cover letter longer than the piece itself, something's wrong.
+        </p>
+        <p style="margin: 0 0 20px;">
+          There's no word count. Some forms are short. A zine review is half a page. Some are long. A dissertation chapter is twelve pages. The form decides.
+        </p>
+        <p style="margin: 0 0 20px;">
+          If the piece works, I'll be in touch about building it for the archive. Each piece gets its own visual rendering to match its form. We'd work on that together.
+        </p>
+        <p style="margin: 0 0 0;">
+          If it doesn't work, I'll tell you why. I won't be cruel about it, but I won't be vague either. There's no point in pretending something fits when it doesn't.
+        </p>
+
+        <div style={`height: 1px; background: ${S.rule}; margin: 36px 0;`}></div>
+
+        <h2 style={`
+          font-family: var(--serif); font-size: 22px; font-weight: 400;
+          color: ${S.text}; margin: 0 0 16px;
+        `}>Style notes</h2>
+
+        <p style="margin: 0 0 20px;">
+          No em dashes. No en dashes. Use periods, commas, semicolons, or restructure the sentence. This is a house rule and it's not negotiable.
+        </p>
+        <p style="margin: 0 0 20px;">
+          Information arrives through scenes, details, and implication. Never through announcements. Don't tell me a guitarist was brilliant. Show me what she did with her hands and let me decide.
+        </p>
+        <p style="margin: 0 0 0;">
+          Emotion lives in the specific. "The show was transcendent" is nothing. "I found myself standing in the parking lot afterward, unable to remember walking outside" is everything.
+        </p>
+
+        <div style={`
+          font-family: var(--mono); font-size: 11px; color: ${S.textGhost};
+          margin-top: 48px; letter-spacing: 0.06em;
+        `}>
+          TL Skinsbury
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

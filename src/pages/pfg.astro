@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import PanhandlingForGod from '../components/pieces/PanhandlingForGod.jsx';
+
+const piece = PIECES.find(p => p.id === 'pfg');
+---
+
+<PieceLayout piece={piece}>
+  <PanhandlingForGod client:load />
+</PieceLayout>

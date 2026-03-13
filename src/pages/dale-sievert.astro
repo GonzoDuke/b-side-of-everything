@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import DaleSievert from '../components/pieces/DaleSievert.jsx';
+
+const piece = PIECES.find(p => p.id === 'dale-sievert');
+---
+
+<PieceLayout piece={piece}>
+  <DaleSievert client:load />
+</PieceLayout>

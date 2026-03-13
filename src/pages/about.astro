@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const S = {
+  bg: "#1a1714",
+  text: "#f0ece4",
+  textDim: "rgba(240,236,228,0.65)",
+  textGhost: "rgba(240,236,228,0.4)",
+  rule: "rgba(240,236,228,0.12)",
+  buttonBorder: "rgba(240,236,228,0.2)",
+  buttonText: "rgba(240,236,228,0.55)",
+};
+---
+
+<BaseLayout
+  title="About — The B-Side of Everything"
+  description="Writing about music that didn't survive its own context. The project is preservation, not authentication."
+  ogImage="/og-image.png"
+  ogUrl="https://thebsideofeverything.com/about"
+>
+  <div style={`background: ${S.bg}; min-height: 100vh;`}>
+    <!-- Nav -->
+    <nav style={`
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(26,23,20,0.92);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid ${S.rule};
+      padding: 0 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 52px;
+    `}>
+      <a href="/" style={`
+        background: none; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
+        font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 0.06em;
+        color: ${S.buttonText}; padding: 6px 14px; text-decoration: none;
+      `}>&larr; Back to Collection</a>
+      <span style={`
+        font-family: var(--serif); font-size: 14px; font-weight: 400;
+        font-style: italic; color: ${S.textGhost};
+      `}>The B-Side of Everything</span>
+    </nav>
+
+    <!-- Content -->
+    <div style="max-width: 640px; margin: 0 auto; padding: 100px 32px 120px;">
+      <h1 style={`
+        font-family: var(--serif); font-size: 32px; font-weight: 400;
+        color: ${S.text}; margin: 0 0 32px; letter-spacing: -0.01em;
+      `}>About the Archive</h1>
+
+      <div style={`
+        font-family: var(--body); font-size: 16px; line-height: 1.85;
+        color: ${S.textDim};
+      `}>
+        <p style="margin: 0 0 20px;">
+          People ask how I find this stuff. The honest answer is that most of it found me. A cassette in a box lot. A dead link that led to another dead link that led to a cached page with a review on it. A friend saying "you'd like this" and being right for once. A flea market in central New Jersey where someone had written <em>find this</em> in pencil next to a name I'd never heard.
+        </p>
+        <p style="margin: 0 0 20px;">
+          The collection doesn't have a methodology. It has a disposition. I'm drawn to writing that was never meant to last and that lasts anyway. A student interviewing her professor. A radio host arguing with his co-hosts about a band they saw eight years ago. A French kid reviewing a 7-inch he got in the mail. None of these people thought they were making something permanent. That's why it's good.
+        </p>
+        <p style="margin: 0 0 20px;">
+          Each piece arrived in a different form, and I've tried to preserve the form it arrived in. The form matters. A comment section tells a different story than liner notes. A dissertation chapter makes different demands than a tape label. If I stripped all of these down to plain text on a white page, you'd lose the thing that makes each one itself. You'd lose the fact that a zine looks like a zine because someone made it on a photocopier at two in the morning, and that's part of the argument.
+        </p>
+        <p style="margin: 0 0 20px;">
+          I'm not a musicologist. I'm not a journalist. I ran a room once, a long time ago, in a building I can't find anymore. What I am is a person who pays attention to the writing people do about music when they don't think anyone's reading. That writing is almost always more honest than the professional kind, and it almost always disappears first.
+        </p>
+        <p style="margin: 0 0 20px;">
+          Not everything here can be verified. I've tried where I can. Sometimes the dates don't line up. Sometimes the only evidence a band existed is the fact that someone wrote about them. I'm not interested in authentication. I'm interested in the moment when someone heard something and tried to hold onto it with language, and the language almost worked.
+        </p>
+        <p style="margin: 0 0 20px;">
+          The collection is not complete. It won't be. There's a hard drive I haven't opened in three years. There's a box in the closet with show flyers and handwritten setlists and at least one thing I'm afraid to look at because I think the dog got to it. There's more coming, slowly, when I find it or when it finds me.
+        </p>
+        <p style="margin: 0 0 0;">
+          If you've got something that belongs here, I want to see it. It doesn't have to be polished. It doesn't have to be finished. It just has to be real, or close enough that the difference doesn't matter. <a href="mailto:archive@thebsideofeverything.com" style={`color: ${S.text}; text-decoration: none; border-bottom: 1px solid ${S.rule};`}>Send it to the archive</a>.
+        </p>
+
+        <div style={`
+          font-family: var(--mono); font-size: 11px; color: ${S.textGhost};
+          margin-top: 48px; letter-spacing: 0.06em;
+        `}>
+          TL Skinsbury
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

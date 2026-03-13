@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import BookingSheet from '../components/pieces/BookingSheet.jsx';
+
+const piece = PIECES.find(p => p.id === 'booking-sheet');
+---
+
+<PieceLayout piece={piece}>
+  <BookingSheet client:load />
+</PieceLayout>

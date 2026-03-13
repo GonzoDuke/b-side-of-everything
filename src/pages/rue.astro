@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import Rue from '../components/pieces/Rue.jsx';
+
+const piece = PIECES.find(p => p.id === 'rue');
+---
+
+<PieceLayout piece={piece}>
+  <Rue client:load />
+</PieceLayout>

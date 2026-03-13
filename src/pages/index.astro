@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeContent from '../components/HomeContent.jsx';
+---
+
+<BaseLayout>
+  <div style="background: #1a1714 url('/bg.jpg') center top / cover no-repeat fixed; min-height: 100vh;">
+    <HomeContent client:only="react" />
+  </div>
+</BaseLayout>

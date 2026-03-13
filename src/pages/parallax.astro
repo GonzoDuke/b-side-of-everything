@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import Parallax from '../components/pieces/Parallax.jsx';
+
+const piece = PIECES.find(p => p.id === 'parallax');
+---
+
+<PieceLayout piece={piece}>
+  <Parallax client:load />
+</PieceLayout>

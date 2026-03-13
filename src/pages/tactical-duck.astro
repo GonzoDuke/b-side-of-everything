@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import TacticalDuck from '../components/pieces/TacticalDuck.jsx';
+
+const piece = PIECES.find(p => p.id === 'tactical-duck');
+---
+
+<PieceLayout piece={piece}>
+  <TacticalDuck client:load />
+</PieceLayout>

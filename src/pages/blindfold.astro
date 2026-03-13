@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import BlindFoldTest from '../components/pieces/BlindFoldTest.jsx';
+
+const piece = PIECES.find(p => p.id === 'blindfold');
+---
+
+<PieceLayout piece={piece}>
+  <BlindFoldTest client:load />
+</PieceLayout>

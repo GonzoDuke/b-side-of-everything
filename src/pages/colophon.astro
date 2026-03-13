@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const S = {
+  bg: "#1a1714",
+  text: "#f0ece4",
+  textDim: "rgba(240,236,228,0.65)",
+  textGhost: "rgba(240,236,228,0.4)",
+  rule: "rgba(240,236,228,0.12)",
+};
+---
+
+<BaseLayout
+  title="Colophon — The B-Side of Everything"
+  description="The B-Side of Everything is a work of para-fiction by Dr. Jonathan M. Kelly."
+  ogImage="/og-image.png"
+  ogUrl="https://thebsideofeverything.com/colophon"
+>
+  <div style={`background: ${S.bg}; min-height: 100vh;`}>
+    <div style="max-width: 540px; margin: 0 auto; padding: 120px 32px;">
+
+      <div style={`
+        font-family: var(--mono); font-size: 10px; color: ${S.textGhost};
+        letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 32px;
+      `}>Colophon</div>
+
+      <div style={`
+        font-family: var(--body); font-size: 16px; line-height: 1.85;
+        color: ${S.textDim};
+      `}>
+        <p style="margin: 0 0 20px;">
+          <em>The B-Side of Everything</em> is a work of para-fiction by
+          <a href="https://jonathanmkelly.com" style={`color: ${S.text}; text-decoration: none; border-bottom: 1px solid ${S.rule};`}>Dr. Jonathan M. Kelly</a>
+          (D.Litt., Creative Writing). The bands are invented. The writing is real.
+        </p>
+        <p style="margin: 0 0 20px;">
+          Each piece occupies a different form of music writing: liner notes, live reviews,
+          comment sections, dissertations, zine pages, radio transcripts, record guides.
+          The collection is a catalog of how music gets written about, and what survives
+          when the music itself doesn't.
+        </p>
+        <p style="margin: 0 0 20px;">
+          All characters, bands, labels, and publications within the archive are fictional.
+          Real artists, venues, cities, and cultural references appear alongside the fictional
+          material. This is intentional.
+        </p>
+        <p style="margin: 0 0 0;">
+          For publishing inquiries, contact
+          <a href="mailto:archive@thebsideofeverything.com" style={`color: ${S.text}; text-decoration: none; border-bottom: 1px solid ${S.rule};`}>archive@thebsideofeverything.com</a>.
+        </p>
+      </div>
+
+      <div style={`height: 1px; background: ${S.rule}; margin: 48px 0 24px;`}></div>
+
+      <div style={`
+        font-family: var(--mono); font-size: 10px; line-height: 1.8;
+        color: ${S.textGhost}; letter-spacing: 0.02em;
+      `}>
+        Set in Cormorant Garamond, Newsreader, and DM Mono.<br />
+        Built with Astro. Hosted on Vercel.<br />
+        &copy; {new Date().getFullYear()} Jonathan M. Kelly. All rights reserved.
+      </div>
+    </div>
+  </div>
+</BaseLayout>

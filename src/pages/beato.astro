@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import Beato from '../components/pieces/Beato.jsx';
+
+const piece = PIECES.find(p => p.id === 'beato');
+---
+
+<PieceLayout piece={piece}>
+  <Beato client:load />
+</PieceLayout>

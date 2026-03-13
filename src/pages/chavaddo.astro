@@ -1,0 +1,11 @@
+---
+import PieceLayout from '../layouts/PieceLayout.astro';
+import { PIECES } from '../data/pieces.js';
+import Chavaddo from '../components/pieces/Chavaddo.jsx';
+
+const piece = PIECES.find(p => p.id === 'chavaddo');
+---
+
+<PieceLayout piece={piece}>
+  <Chavaddo client:load />
+</PieceLayout>
