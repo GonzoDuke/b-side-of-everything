@@ -92,7 +92,7 @@ export default function WBTK() {
       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
       <div style={{
-        maxWidth: "660px",
+        maxWidth: "min(92vw, 1300px)",
         width: "100%",
         background: "#f7f7f5",
         padding: "clamp(36px, 6vw, 64px) clamp(24px, 5vw, 64px) clamp(40px, 6vw, 72px)",

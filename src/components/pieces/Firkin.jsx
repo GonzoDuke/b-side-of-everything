@@ -137,7 +137,7 @@ export default function Firkin() {
 
       {/* Article */}
       <div style={{
-        maxWidth: "640px",
+        maxWidth: "min(92vw, 1300px)",
         margin: "0 auto",
         padding: "40px 20px 80px",
       }}>

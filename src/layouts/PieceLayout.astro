@@ -13,8 +13,9 @@ const S = {
   textDim: "rgba(240,236,228,0.65)",
   textGhost: "rgba(240,236,228,0.4)",
   rule: "rgba(240,236,228,0.12)",
-  buttonBorder: "rgba(240,236,228,0.2)",
-  buttonText: "rgba(240,236,228,0.55)",
+  buttonBorder: "rgba(240,236,228,0.35)",
+  buttonText: "rgba(240,236,228,0.8)",
+  buttonBg: "rgba(240,236,228,0.06)",
 };
 ---
 
@@ -26,51 +27,51 @@ const S = {
       background: rgba(26,23,20,0.92);
       backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid ${S.rule};
-      padding: 0 28px;
+      padding: 0 48px;
       display: flex; align-items: center; justify-content: space-between;
-      height: 52px;
+      height: 72px;
     `}>
       <div style="display: flex; align-items: center; gap: 8px;">
         <a href="/" style={`
-          background: none; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
-          font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 0.06em;
-          color: ${S.buttonText}; padding: 6px 14px; text-decoration: none;
+          background: ${S.buttonBg}; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
+          font-family: var(--mono); font-size: 14px; font-weight: 400; letter-spacing: 0.06em;
+          color: ${S.buttonText}; padding: 10px 22px; text-decoration: none;
           transition: all 0.15s ease;
         `}>&larr; Back to Collection</a>
       </div>
       <span style={`
-        font-family: var(--serif); font-size: 14px; font-weight: 400;
+        font-family: var(--serif); font-size: 18px; font-weight: 400;
         font-style: italic; color: ${S.textGhost};
       `}>The B-Side of Everything</span>
     </nav>
 
     <!-- Editorial Note -->
     <div style={`background: ${S.bg}; border-bottom: 1px solid ${S.rule};`}>
-      <div style="max-width: 880px; margin: 0 auto; padding: 72px 32px 32px;">
-        <div style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
+      <div style="max-width: min(88vw, 1100px); margin: 0 auto; padding: 92px 32px 32px;">
+        <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
           <!-- Title block -->
-          <div style="flex: 1 1 280px; min-width: 240px;">
+          <div style="flex: 1 1 300px; min-width: 260px;">
             <div style={`
-              font-family: var(--serif); font-size: 26px; font-weight: 400;
-              line-height: 1.2; color: ${S.text}; letter-spacing: -0.01em; margin-bottom: 4px;
+              font-family: var(--serif); font-size: 30px; font-weight: 400;
+              line-height: 1.2; color: ${S.text}; letter-spacing: -0.01em; margin-bottom: 6px;
             `}>{piece.title}</div>
             {piece.subtitle && (
               <div style={`
-                font-family: var(--serif); font-size: 17px; font-weight: 300;
-                font-style: italic; color: ${S.textDim}; line-height: 1.3; margin-bottom: 8px;
+                font-family: var(--serif); font-size: 19px; font-weight: 300;
+                font-style: italic; color: ${S.textDim}; line-height: 1.3; margin-bottom: 10px;
               `}>{piece.subtitle}</div>
             )}
             <div style={`
-              font-family: var(--mono); font-size: 10px; font-weight: 300;
+              font-family: var(--mono); font-size: 12px; font-weight: 300;
               color: ${S.textGhost}; letter-spacing: 0.01em;
             `}>{piece.form}{piece.year ? ` · ${piece.year}` : ''}</div>
           </div>
 
           <!-- Editorial note -->
           {piece.note && (
-            <div style={`flex: 1 1 340px; border-left: 1px solid ${S.rule}; padding-left: 24px;`}>
+            <div style={`flex: 1 1 380px; border-left: 1px solid ${S.rule}; padding-left: 28px;`}>
               <p style={`
-                font-family: var(--body); font-size: 14.5px; line-height: 1.7;
+                font-family: var(--body); font-size: 18px; line-height: 1.75;
                 color: ${S.textDim}; font-style: italic; font-weight: 400; margin: 0;
               `}>{piece.note}</p>
             </div>
@@ -85,11 +86,11 @@ const S = {
     <slot />
 
     <!-- Return footer -->
-    <div style={`background: ${S.bg}; padding: 64px 28px 120px; text-align: center;`}>
+    <div style={`background: ${S.bg}; padding: 64px 40px 120px; text-align: center;`}>
       <a href="/" style={`
-        background: none; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
-        font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 0.06em;
-        color: ${S.buttonText}; padding: 8px 20px; text-decoration: none;
+        background: ${S.buttonBg}; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
+        font-family: var(--mono); font-size: 14px; font-weight: 400; letter-spacing: 0.06em;
+        color: ${S.buttonText}; padding: 10px 24px; text-decoration: none;
         transition: all 0.15s ease; display: inline-block;
       `}>&larr; Back to Collection</a>
     </div>

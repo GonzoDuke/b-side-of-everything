@@ -64,7 +64,7 @@ export default function Beato() {
 
       {/* Article */}
       <div style={{
-        maxWidth: "640px",
+        maxWidth: "min(92vw, 1300px)",
         margin: "0 auto",
         padding: "48px 24px 80px",
       }}>

@@ -769,7 +769,7 @@ export default function AMA() {
           borderRadius: "20px",
           padding: "8px 16px",
           flex: 1,
-          maxWidth: "600px",
+          maxWidth: "min(92vw, 1400px)",
           color: R.muted,
           fontSize: "14px",
           border: `1px solid ${R.border}`,
@@ -786,7 +786,7 @@ export default function AMA() {
         padding: "0 16px",
       }}>
         <div style={{
-          maxWidth: "740px",
+          maxWidth: "min(92vw, 1400px)",
           margin: "0 auto",
           display: "flex",
           alignItems: "flex-end",
@@ -817,7 +817,7 @@ export default function AMA() {
       </div>
 
       {/* Main content area */}
-      <div style={{ maxWidth: "740px", margin: "16px auto", padding: "0 16px" }}>
+      <div style={{ maxWidth: "min(92vw, 1400px)", margin: "16px auto", padding: "0 16px" }}>
         {/* Post card */}
         <div style={{
           background: R.card,

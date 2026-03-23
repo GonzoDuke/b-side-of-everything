@@ -3,26 +3,27 @@ export default function PanhandlingForGod() {
     return (
       <div className="pdf-page" style={{
         background: "#ffffff",
-        maxWidth: "680px",
-        width: "100%",
-        padding: "72px 80px 80px",
+        flex: "1 1 420px",
+        maxWidth: "600px",
+        aspectRatio: "8.5 / 11",
+        padding: "60px 64px 64px",
         position: "relative",
         boxShadow: "0 1px 6px rgba(0,0,0,0.12)",
-        marginBottom: "20px",
         fontFamily: '"Times New Roman", Times, serif',
-        fontSize: "12pt",
-        lineHeight: "24pt",
+        fontSize: "11pt",
+        lineHeight: "22pt",
         color: "#1a1a1a",
+        overflow: "hidden",
       }}>
         {/* Running header */}
         <div className="pdf-page-header" style={{
           position: "absolute",
-          top: "36px",
-          left: "80px",
-          right: "80px",
+          top: "28px",
+          left: "64px",
+          right: "64px",
           display: "flex",
           justifyContent: "space-between",
-          fontSize: "10pt",
+          fontSize: "9pt",
           color: "#888",
         }}>
           <span>{number}</span>
@@ -82,9 +83,6 @@ export default function PanhandlingForGod() {
     <div style={{
       background: "#8a8a8a",
       minHeight: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
       padding: "32px 16px 80px",
     }}>
       {/* PDF viewer top bar */}
@@ -114,6 +112,16 @@ export default function PanhandlingForGod() {
           <span style={{ color: "rgba(255,255,255,0.4)" }}>12 pages</span>
         </div>
       </div>
+
+      {/* Pages in two-column grid */}
+      <div style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: "20px",
+        maxWidth: "min(94vw, 1280px)",
+        margin: "0 auto",
+      }}>
 
       {/* PAGE 1 */}
       <Page number={87}>
@@ -307,6 +315,7 @@ export default function PanhandlingForGod() {
           <FnText n={24}>de Certeau, <em>The Practice of Everyday Life</em>, 91{"\u2013"}110. The researcher notes that this chapter has relied heavily on de Certeau's theoretical apparatus, perhaps more heavily than a more diversified analytic approach would recommend. Alternative frameworks were considered at various stages of the project. De Certeau persisted. The researcher attributes this in part to the genuine applicability of the tactical/strategic distinction to the case at hand, and in part to what may be a limitation of her own theoretical range. Both explanations are offered without prejudice.</FnText>
         </div>
       </Page>
+      </div>
     </div>
   )
 }

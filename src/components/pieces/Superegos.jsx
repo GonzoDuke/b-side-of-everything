@@ -105,7 +105,7 @@ export default function Superegos() {
           fontWeight: 700,
           lineHeight: 1.15,
           color: "white",
-          maxWidth: "700px",
+          maxWidth: "min(92vw, 1400px)",
           margin: "0 auto 16px",
           letterSpacing: "-0.01em",
         }}>
@@ -117,7 +117,7 @@ export default function Superegos() {
           fontWeight: 300,
           fontStyle: "italic",
           color: "rgba(255,255,255,0.55)",
-          maxWidth: "560px",
+          maxWidth: "min(92vw, 1200px)",
           margin: "0 auto 24px",
           lineHeight: 1.5,
         }}>
@@ -134,7 +134,7 @@ export default function Superegos() {
 
       {/* Article body */}
       <div style={{
-        maxWidth: "660px",
+        maxWidth: "min(92vw, 1300px)",
         margin: "0 auto",
         padding: "48px 24px 80px",
         fontFamily: '"Libre Franklin", sans-serif',

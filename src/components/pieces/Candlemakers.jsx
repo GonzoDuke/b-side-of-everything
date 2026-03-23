@@ -9,14 +9,15 @@ export default function Candlemakers() {
     }}>
       <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
 
-      <div style={{ maxWidth: "580px", width: "100%" }}>
-        {/* The insert */}
+      <div style={{ maxWidth: "min(90vw, 900px)", width: "100%" }}>
+        {/* The insert - square like a record jacket */}
         <div style={{
           background: "#eee9dc",
           position: "relative",
           boxShadow: "4px 6px 24px rgba(0,0,0,0.4), 0 0 1px rgba(0,0,0,0.3)",
           transform: "rotate(-0.4deg)",
           overflow: "hidden",
+          aspectRatio: "1 / 1",
         }}>
           {/* Paper texture */}
           <div style={{

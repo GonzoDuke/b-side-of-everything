@@ -25,30 +25,30 @@ const S = {
       background: rgba(26,23,20,0.92);
       backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid ${S.rule};
-      padding: 0 28px;
+      padding: 0 48px;
       display: flex; align-items: center; justify-content: space-between;
-      height: 52px;
+      height: 72px;
     `}>
       <a href="/" style={`
-        background: none; border: 1px solid ${S.buttonBorder}; border-radius: 4px;
-        font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: 0.06em;
-        color: ${S.buttonText}; padding: 6px 14px; text-decoration: none;
+        background: rgba(240,236,228,0.06); border: 1px solid rgba(240,236,228,0.35); border-radius: 4px;
+        font-family: var(--mono); font-size: 14px; font-weight: 400; letter-spacing: 0.06em;
+        color: rgba(240,236,228,0.8); padding: 10px 22px; text-decoration: none;
       `}>&larr; Back to Collection</a>
       <span style={`
-        font-family: var(--serif); font-size: 14px; font-weight: 400;
+        font-family: var(--serif); font-size: 18px; font-weight: 400;
         font-style: italic; color: ${S.textGhost};
       `}>The B-Side of Everything</span>
     </nav>
 
     <!-- Content -->
-    <div style="max-width: 640px; margin: 0 auto; padding: 100px 32px 120px;">
+    <div style="max-width: min(88vw, 800px); margin: 0 auto; padding: 120px 32px 120px;">
       <h1 style={`
         font-family: var(--serif); font-size: 32px; font-weight: 400;
         color: ${S.text}; margin: 0 0 32px; letter-spacing: -0.01em;
       `}>About the Archive</h1>
 
       <div style={`
-        font-family: var(--body); font-size: 16px; line-height: 1.85;
+        font-family: var(--body); font-size: 18px; line-height: 1.85;
         color: ${S.textDim};
       `}>
         <p style="margin: 0 0 20px;">
@@ -74,10 +74,10 @@ const S = {
         </p>
 
         <div style={`
-          font-family: var(--mono); font-size: 11px; color: ${S.textGhost};
+          font-family: var(--mono); font-size: 14px; color: ${S.textGhost};
           margin-top: 48px; letter-spacing: 0.06em;
         `}>
-          TL Skinsbury
+          Skinsbury
         </div>
       </div>
     </div>

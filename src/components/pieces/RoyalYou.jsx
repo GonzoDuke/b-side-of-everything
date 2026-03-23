@@ -7,7 +7,7 @@ export default function RoyalYou() {
     }}>
       {/* Webzine layout */}
       <div className="piece-sidebar-layout" style={{
-        maxWidth: "820px",
+        maxWidth: "min(92vw, 1500px)",
         margin: "0 auto",
         display: "flex",
         minHeight: "100vh",

@@ -54,7 +54,7 @@ export default function HomeContent() {
         {/* Header */}
         <header style={{
           padding: "min(14vh, 140px) 48px 64px",
-          maxWidth: "1200px",
+          maxWidth: "min(92vw, 1600px)",
           margin: "0 auto",
           opacity: mounted ? 1 : 0,
           transform: mounted ? "translateY(0)" : "translateY(12px)",
@@ -107,7 +107,7 @@ export default function HomeContent() {
 
         {/* Tagline bar */}
         <div style={{
-          maxWidth: "1200px",
+          maxWidth: "min(92vw, 1600px)",
           margin: "0 auto",
           padding: "0 48px 24px",
           display: "flex",
@@ -135,13 +135,13 @@ export default function HomeContent() {
             letterSpacing: "0.1em",
             color: "rgba(240,236,228,0.5)",
           }}>
-            Collected by TL Skinsbury
+            Collected by Skinsbury
           </span>
         </div>
 
         {/* Divider */}
         <div style={{
-          maxWidth: "1200px",
+          maxWidth: "min(92vw, 1600px)",
           margin: "0 auto",
           padding: "0 48px",
           opacity: mounted ? 1 : 0,
@@ -152,7 +152,7 @@ export default function HomeContent() {
 
         {/* Grid section */}
         <section style={{
-          maxWidth: "1200px",
+          maxWidth: "min(92vw, 1600px)",
           margin: "0 auto",
           padding: "0 48px",
         }}>
@@ -248,7 +248,7 @@ export default function HomeContent() {
 
             {/* Fill cell */}
             <div
-              onClick={() => { window.location.href = "/submissions" }}
+              onClick={() => { window.location.href = "/submit" }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(240,236,228,0.1)"; e.currentTarget.style.borderColor = "rgba(240,236,228,0.25)" }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(240,236,228,0.06)"; e.currentTarget.style.borderColor = "rgba(240,236,228,0.15)" }}
               style={{

@@ -120,7 +120,7 @@ export default function BlindFoldTest() {
       <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
 
       <div style={{
-        maxWidth: "660px",
+        maxWidth: "min(92vw, 1300px)",
         margin: "0 auto",
         background: "#f5f1e8",
         minHeight: "100vh",

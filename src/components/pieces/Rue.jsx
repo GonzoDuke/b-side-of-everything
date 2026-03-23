@@ -527,7 +527,7 @@ export default function Rue() {
         </div>
         <div style={{
           flex: 1,
-          maxWidth: "540px",
+          maxWidth: "min(92vw, 1200px)",
           display: "flex",
           margin: "0 auto",
         }}>
@@ -559,7 +559,7 @@ export default function Rue() {
       </div>
 
       {/* Main content */}
-      <div style={{ maxWidth: "860px", margin: "0 auto", padding: "24px 24px 80px" }}>
+      <div style={{ maxWidth: "min(92vw, 1400px)", margin: "0 auto", padding: "24px 24px 80px" }}>
         {/* Video player area */}
         <div style={{
           width: "100%",

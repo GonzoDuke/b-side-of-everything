@@ -47,7 +47,7 @@ export default function DaleSievert() {
       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 
       <div style={{
-        maxWidth: "640px",
+        maxWidth: "min(92vw, 1300px)",
         width: "100%",
         background: "#f5f1ea",
         padding: "clamp(32px, 6vw, 56px) clamp(24px, 5vw, 56px) clamp(32px, 6vw, 64px)",

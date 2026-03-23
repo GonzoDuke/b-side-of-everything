@@ -54,7 +54,7 @@ export default function Parallax() {
 
       {/* Blog layout with sidebar */}
       <div className="piece-sidebar-layout" style={{
-        maxWidth: "960px",
+        maxWidth: "min(92vw, 1500px)",
         margin: "0 auto",
         display: "flex",
         gap: "0",
@@ -65,7 +65,7 @@ export default function Parallax() {
           flex: 1,
           background: "#fff",
           padding: "0",
-          maxWidth: "660px",
+          maxWidth: "min(92vw, 1300px)",
           borderRight: "1px solid #ddd",
           borderLeft: "1px solid #ddd",
         }}>

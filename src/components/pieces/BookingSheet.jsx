@@ -36,7 +36,7 @@ export default function BookingSheet() {
 
       {/* Email container */}
       <div style={{
-        maxWidth: "680px",
+        maxWidth: "min(92vw, 1400px)",
         margin: "20px auto 0",
         background: "#ffffff",
         borderRadius: "8px",

@@ -7,9 +7,19 @@ export default function Chavaddo() {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      gap: "32px",
     }}>
       <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+
+      {/* Pages 38 and 39 side by side on wide screens */}
+      <div className="guide-spread" style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: "32px",
+        marginBottom: "32px",
+        maxWidth: "min(94vw, 1400px)",
+        width: "100%",
+      }}>
 
       <Page number={38}>
         <RunHead left="Shore Leave" right="Corrado, 1987" />
@@ -42,6 +52,7 @@ export default function Chavaddo() {
           </p>
         </Body>
       </Page>
+      </div>
 
       <Page number={40} annotationFind>
         <RunHead left="Shore Leave" right="Corrado, 1987" />
@@ -69,13 +80,13 @@ export default function Chavaddo() {
 
 function Page({ number, children, annotationFind }) {
   return (
-    <div style={{ maxWidth: "520px", width: "100%" }}>
+    <div style={{ flex: "1 1 480px", maxWidth: "660px", width: "100%" }}>
       <div style={{
         background: "#1a1816",
         padding: "16px",
         borderRadius: "2px",
       }}>
-        <div style={{
+        <div className="guide-page" style={{
           background: "#ddd8cc",
           position: "relative",
           overflowX: "hidden",
