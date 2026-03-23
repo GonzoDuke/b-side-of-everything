@@ -248,7 +248,7 @@ export default function HomeContent() {
 
             {/* Fill cell */}
             <div
-              onClick={() => { window.location.href = "/submit" }}
+              onClick={() => { window.location.href = "/submissions" }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(240,236,228,0.1)"; e.currentTarget.style.borderColor = "rgba(240,236,228,0.25)" }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(240,236,228,0.06)"; e.currentTarget.style.borderColor = "rgba(240,236,228,0.15)" }}
               style={{
