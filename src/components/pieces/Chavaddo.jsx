@@ -103,7 +103,7 @@ export default function Chavaddo() {
           <div style={{ position: "relative" }}>
             <Body>
               <p style={{ margin: "0 0 0", textIndent: 0 }}>
-                Not a band. A night. Someone whose name nobody agrees on ran a gas generator down to the beach south of Funtown Pier on a hand truck and five or six acts played on a platform built that morning out of dock lumber and whatever else was around. No permits. No flyers. Word of mouth and the sound carrying over the dunes. Estimates range from eighty to three hundred people depending on who you ask and how much of the evening they remember. The only known recording is a cassette made by a woman sitting on a cooler near the back, and 
+                Not a band. A night. Someone whose name nobody agrees on ran a gas generator down to the beach south of Funtown Pier on a hand truck and five or six acts played on a platform built that morning out of dock lumber and whatever 
               </p>
             </Body>
             {/* Photocopy smudge obscuring the last bit */}
