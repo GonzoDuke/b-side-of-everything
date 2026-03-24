@@ -16,7 +16,6 @@ export default function Candlemakers() {
           position: "relative",
           boxShadow: "4px 6px 24px rgba(0,0,0,0.4), 0 0 1px rgba(0,0,0,0.3)",
           transform: "rotate(-0.4deg)",
-          overflow: "hidden",
           aspectRatio: "1 / 1",
         }}>
           {/* Paper texture */}

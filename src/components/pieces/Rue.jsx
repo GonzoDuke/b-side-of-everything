@@ -31,7 +31,7 @@ function ThumbDown({ size = 20 }) {
   )
 }
 
-function YTComment({ username, text, time, likes, isPinned, isHeart, replies = [] }) {
+function YTComment({ username, text, time, likes, isPinned, isHeart, replies = [], isFirstWithReplies }) {
   const [showReplies, setShowReplies] = useState(false)
   const initial = username.charAt(0).toUpperCase()
 
@@ -132,6 +132,7 @@ function YTComment({ username, text, time, likes, isPinned, isHeart, replies = [
                   display: "flex",
                   alignItems: "center",
                   gap: "6px",
+                  animation: isFirstWithReplies ? "replyHint 2s ease-in-out 3" : "none",
                 }}
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill={Y.link}>
@@ -503,6 +504,12 @@ export default function Rue() {
   return (
     <div style={{ background: Y.bg, ...ytFont, color: Y.text, minHeight: "100vh" }}>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes replyHint {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.4; }
+        }
+      `}} />
 
       {/* YouTube top bar */}
       <div style={{
@@ -787,9 +794,14 @@ export default function Rue() {
           </div>
 
           {/* Comments */}
-          {COMMENTS.map((c, i) => (
-            <YTComment key={i} {...c} />
-          ))}
+          {(() => {
+            let firstRepliesFound = false;
+            return COMMENTS.map((c, i) => {
+              const isFirst = !firstRepliesFound && c.replies && c.replies.length > 0;
+              if (isFirst) firstRepliesFound = true;
+              return <YTComment key={i} {...c} isFirstWithReplies={isFirst} />;
+            });
+          })()}
         </div>
       </div>
     </div>

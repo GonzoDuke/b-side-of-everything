@@ -74,6 +74,14 @@ const S = {
                 font-family: var(--body); font-size: 18px; line-height: 1.75;
                 color: ${S.textDim}; font-style: italic; font-weight: 400; margin: 0;
               `}>{piece.note}</p>
+              {piece.instruction && (
+                <p style={`
+                  font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+                  color: ${S.text}; font-style: normal; font-weight: 400;
+                  margin: 16px 0 0; padding: 10px 0 0;
+                  border-top: 1px solid ${S.rule};
+                `}>{piece.instruction}</p>
+              )}
             </div>
           )}
         </div>

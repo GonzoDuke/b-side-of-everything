@@ -24,7 +24,8 @@ export const PIECES = [
     form: "YouTube Comment Section",
     year: "2013\u20132024",
     status: "live",
-    note: "This isn't an article. It's a comment section. Someone uploaded a live video of a band called Rue performing \"Nest\" at a place called The Bakery in Asheville, and then people argued about it for four years. I saved it because the argument is better than most essays I've read about what happens when a song leaves the room it was written in. Also because Iris might actually show up at the end, and if that's really her, it's the closest thing to a resolution the internet has ever produced. Click the replies. The full story is in the threads.",
+    note: "This isn't an article. It's a comment section. Someone uploaded a live video of a band called Rue performing \"Nest\" at a place called The Bakery in Asheville, and then people argued about it for four years. I saved it because the argument is better than most essays I've read about what happens when a song leaves the room it was written in. Also because Iris might actually show up at the end, and if that's really her, it's the closest thing to a resolution the internet has ever produced.",
+    instruction: "Click the replies. The full story is in the threads.",
   },
   {
     id: "superegos",
