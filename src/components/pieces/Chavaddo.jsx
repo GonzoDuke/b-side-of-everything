@@ -103,7 +103,7 @@ export default function Chavaddo() {
           <div style={{ position: "relative" }}>
             <Body>
               <p style={{ margin: "0 0 0", textIndent: 0 }}>
-                Not a band. A night. Someone whose name nobody agrees on ran a gas generator down to the beach south of Funtown Pier on a hand truck and five or six acts played on a platform built that morning out of dock lumber and whatever 
+                Not a band. A night. Someone whose name nobody agrees on ran a gas generator down to the beach south of Funtown Pier on a hand truck and five or  
               </p>
             </Body>
             {/* Photocopy smudge obscuring the last bit */}
