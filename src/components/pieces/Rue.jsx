@@ -288,7 +288,7 @@ COMMENTS.push({
 COMMENTS.push({
   username: "appalachian_sky",
   time: "4 years ago",
-  text: "I was at this show. I was the wet dog, metaphorically speaking. Drove down from Boone because someone posted a flyer at the co-op. This was before anyone knew who they were. The Bakery wasn't even a venue\u2014it was Iris's boyfriend's dad's failed bakery that they were using for storage. There were folding chairs and someone brought a space heater that kept shorting out. Fuckhawk played for eleven people and it felt like a secret",
+  text: "I was at this show. I was the wet dog, metaphorically speaking. Drove down from Boone because someone posted a flyer at the co-op. This was before anyone knew who they were. The Bakery wasn't even a venue\u2014it was Iris's boyfriend's dad's failed bakery that they were using for storage. There were folding chairs and someone brought a space heater that kept shorting out. Rue played for eleven people and it felt like a secret",
   likes: 187,
 })
 
@@ -316,7 +316,7 @@ COMMENTS.push({
 COMMENTS.push({
   username: "tamsinellory",
   time: "3 years ago",
-  text: "we were offered money once. good money. to let them use one of our songs in a film about grief. the director said it was perfect, said it captured exactly what the scene needed. we said no because Imogen didn't like how they wanted to cut it. everyone said we were stupid. maybe we were. but I think about that sometimes when I see arguments like this. it's not really about the money or the commercial. it's about whether you still recognize the thing you made after someone else gets their hands on it. I don't know if Fuckhawk still recognizes Nest. but I know they're the only ones who get to decide that",
+  text: "we were offered money once. good money. to let them use one of our songs in a film about grief. the director said it was perfect, said it captured exactly what the scene needed. we said no because Imogen didn't like how they wanted to cut it. everyone said we were stupid. maybe we were. but I think about that sometimes when I see arguments like this. it's not really about the money or the commercial. it's about whether you still recognize the thing you made after someone else gets their hands on it. I don't know if Rue still recognizes Nest. but I know they're the only ones who get to decide that",
   likes: 423,
 })
 
@@ -443,7 +443,7 @@ COMMENTS.push({
 COMMENTS.push({
   username: "folkpurist2011",
   time: "2 months ago",
-  text: "I'm moving to Portland next month and I'm selling a bunch of stuff. Found the old show flyer from The Bakery in a box. May 18, 2013. It says \"Fuckhawk (from Asheville) plus two other bands TBA.\" Cover was $3. I'm keeping it",
+  text: "I'm moving to Portland next month and I'm selling a bunch of stuff. Found the old show flyer from The Bakery in a box. May 18, 2013. It says \"Rue (from Asheville) plus two other bands TBA.\" Cover was $3. I'm keeping it",
   likes: 345,
 })
 
