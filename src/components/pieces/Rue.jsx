@@ -31,8 +31,8 @@ function ThumbDown({ size = 20 }) {
   )
 }
 
-function YTComment({ username, text, time, likes, isPinned, isHeart, replies = [], isFirstWithReplies }) {
-  const [showReplies, setShowReplies] = useState(false)
+function YTComment({ username, text, time, likes, isPinned, isHeart, replies = [], isFirstWithReplies, isOpen, onToggle }) {
+  const showReplies = isOpen || false
   const initial = username.charAt(0).toUpperCase()
 
   const colors = [
@@ -120,7 +120,7 @@ function YTComment({ username, text, time, likes, isPinned, isHeart, replies = [
           <div style={{ marginTop: "8px" }}>
             {!showReplies ? (
               <button
-                onClick={() => setShowReplies(true)}
+                onClick={() => onToggle && onToggle()}
                 style={{
                   background: "none",
                   border: "none",
@@ -143,7 +143,7 @@ function YTComment({ username, text, time, likes, isPinned, isHeart, replies = [
             ) : (
               <div style={{ marginTop: "8px" }}>
                 <button
-                  onClick={() => setShowReplies(false)}
+                  onClick={() => onToggle && onToggle()}
                   style={{
                     background: "none",
                     border: "none",
@@ -501,6 +501,8 @@ COMMENTS.push({
 // ═══════════════════════════════════════════════════════════
 
 export default function Rue() {
+  const [openThread, setOpenThread] = useState(null)
+
   return (
     <div style={{ background: Y.bg, ...ytFont, color: Y.text, minHeight: "100vh" }}>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -799,7 +801,7 @@ export default function Rue() {
             return COMMENTS.map((c, i) => {
               const isFirst = !firstRepliesFound && c.replies && c.replies.length > 0;
               if (isFirst) firstRepliesFound = true;
-              return <YTComment key={i} {...c} isFirstWithReplies={isFirst} />;
+              return <YTComment key={i} {...c} isFirstWithReplies={isFirst} isOpen={openThread === i} onToggle={() => setOpenThread(openThread === i ? null : i)} />;
             });
           })()}
         </div>
