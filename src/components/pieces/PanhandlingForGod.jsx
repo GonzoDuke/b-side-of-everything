@@ -6,7 +6,7 @@ export default function PanhandlingForGod() {
         flex: "1 1 420px",
         maxWidth: "600px",
         aspectRatio: "8.5 / 11",
-        padding: "60px 64px 64px",
+        padding: "60px 64px 96px",
         position: "relative",
         boxShadow: "0 1px 6px rgba(0,0,0,0.12)",
         fontFamily: '"Times New Roman", Times, serif',

@@ -133,7 +133,7 @@ export default function DaleSievert() {
 
         <Line who="DALE">And you heard them playing and wanted to be part of it?</Line>
 
-        <Line who="TESS">I went over to tell them to turn down and then just sort of stayed.</Line>
+        <Line who="TESS">I went over to tell them to turn it down and then just sort of stayed.</Line>
 
         <Line who="DALE">That's a good origin story.</Line>
 
