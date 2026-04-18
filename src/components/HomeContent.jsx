@@ -24,7 +24,9 @@ const SORT_KEYS = {
 export default function HomeContent() {
   const [sortBy, setSortBy] = useState("collection")
   const [mounted, setMounted] = useState(false)
+  const [origin, setOrigin] = useState('')
   React.useEffect(() => { setTimeout(() => setMounted(true), 100) }, [])
+  React.useEffect(() => { setOrigin(window.location.origin) }, [])
 
   const sortedPieces = useMemo(() => {
     if (sortBy === "collection") return PIECES
@@ -226,7 +228,7 @@ export default function HomeContent() {
                 label="Submissions welcome"
                 onClick={() => { window.location.href = "/submissions" }}
               />
-              <ShareButton url={window.location.origin} title="The B-Side of Everything" />
+              <ShareButton url={origin} title="The B-Side of Everything" />
             </div>
           </div>
 
