@@ -13,5 +13,6 @@ export function GET(context) {
       pubDate: new Date(),
     })),
     customData: '<language>en-us</language>',
+    stylesheet: '/rss.xsl',
   });
 }
