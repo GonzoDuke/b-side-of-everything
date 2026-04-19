@@ -210,7 +210,7 @@ export default function HomeContent() {
               </div>
             </div>
 
-            {/* Right: about + random + submissions + share */}
+            {/* Right: about + random + share + rss */}
             <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
               <SmallButton
                 label="About"
@@ -224,11 +224,11 @@ export default function HomeContent() {
                   window.location.href = "/" + pick.id
                 }}
               />
-              <SmallButton
-                label="Submissions welcome"
-                onClick={() => { window.location.href = "/submissions" }}
-              />
               <ShareButton url={origin} title="The B-Side of Everything" />
+              <SmallButton
+                label="RSS"
+                onClick={() => { window.open("/rss.xml", "_blank", "noopener,noreferrer") }}
+              />
             </div>
           </div>
 
