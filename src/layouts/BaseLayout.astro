@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
 
-const { title = "The B-Side of Everything", description = "Writing about music that didn't survive its own context. Bands without archives. Scenes without historians.", ogImage = "/og-image.png", ogUrl = "https://thebsideofeverything.com" } = Astro.props;
+const { title = "The B-Side of Everything", description = "Writing about music that didn't survive its own context. Bands without archives. Scenes without historians.", ogImage = "/og-image.png", ogUrl = "https://www.thebsideofeverything.com" } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,13 +18,13 @@ const { title = "The B-Side of Everything", description = "Writing about music t
     <meta property="og:url" content={ogUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`https://thebsideofeverything.com${ogImage}`} />
+    <meta property="og:image" content={`https://www.thebsideofeverything.com${ogImage}`} />
     <meta property="og:site_name" content="The B-Side of Everything" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`https://thebsideofeverything.com${ogImage}`} />
+    <meta name="twitter:image" content={`https://www.thebsideofeverything.com${ogImage}`} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
